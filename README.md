@@ -196,7 +196,39 @@ transformer-project/
 │   └── translation_example.py
 └── README.md
 ```
+```markdown
+
+
+To run the unit tests for this project, use the following command:
+
+```bash
+pytest -v
+```
+
+This will run all test cases and display verbose output showing which tests passed/failed.
+
+## Test Structure
+- Tests are located in the `tests/` directory
+- Layer tests: `test_layers.py`
+- Model tests: `test_model.py`
+
+## Expected Output
+When tests pass successfully, you should see:
+```
+10 passed in X.XXs
+```
+
+All 10 test cases should pass, covering:
+- Scaled Dot Product Attention (with and without mask)
+- Positional Encoding
+- Multi-Head Attention
+- Position-wise Feed Forward
+- Encoder Layer
+- Encoder
+- Transformer Forward Pass
+```
 
 ## References
 
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention Is All You Need. In *Advances in Neural Information Processing Systems* (pp. 5998-6008).
+
