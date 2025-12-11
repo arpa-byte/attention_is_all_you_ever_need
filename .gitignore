@@ -1,13 +1,7 @@
-# Virtual Environment
 venv/
-.venv/
-env/
-
-# Python compiled files and cache
+.data/
 __pycache__/
 *.pyc
-*.pyd
-*.so
-
-# macOS Files
+.pytest_cache/
+best-model.pt
 .DS_Store
